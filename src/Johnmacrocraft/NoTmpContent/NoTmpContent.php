@@ -9,15 +9,18 @@ class NoTmpContent extends PluginBase {
 
 	public function onDisable() {
 		if(file_exists($this->getServer()->getDataPath() . "tmp")) {
-			$this->getLogger()->notice(TextFormat::GOLD . "Cleaning tmp folder...");
+			$this->getLogger()->info(TextFormat::GOLD . "Cleaning tmp folder...");
 			$this->rmdirAll($this->getServer()->getDataPath() . "tmp");
-			$this->getLogger()->notice(TextFormat::GREEN . "Done!");
+			$this->getLogger()->info(TextFormat::GREEN . "Done!");
 		} else {
-			$this->getLogger()->notice(TextFormat::RED . "NoTmpContent didn't clear tmp folder because it doesn't exist. Seems like you're not using PocketMine-MP for Android or deleted it yourself?");
+			$this->getLogger()->info(TextFormat::RED . "NoTmpContent didn't clear tmp folder because it doesn't exist. Seems like you're not using PocketMine-MP for Android or deleted it yourself?");
 		}
 	}
 
-	public function rmdirAll($dir) {
+	/*
+	 * @param string $dir
+	 */
+	public function rmdirAll(string $dir) : void {
 		$dirs = dir($dir);
 		while(false !== ($entry = $dirs->read())) {
 			if(($entry != ".") && ($entry != "..")) {

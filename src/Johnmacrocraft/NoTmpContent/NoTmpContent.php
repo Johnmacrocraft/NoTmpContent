@@ -1,5 +1,18 @@
 <?php
 
+/*
+ *
+ * NoTmpContent
+ *
+ * Copyright © 2017-2018 Johnmacrocraft
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ */
+
 namespace Johnmacrocraft\NoTmpContent;
 
 use pocketmine\plugin\PluginBase;
@@ -20,7 +33,7 @@ class NoTmpContent extends PluginBase {
 	/*
 	 * @param string $dir
 	 */
-	public function rmdirAll(string $dir) : void {
+	private function rmdirAll(string $dir) : void {
 		$dirs = dir($dir);
 		while(false !== ($entry = $dirs->read())) {
 			if(($entry != ".") && ($entry != "..")) {

@@ -20,7 +20,7 @@ use pocketmine\utils\TextFormat;
 
 class NoTmpContent extends PluginBase {
 
-	public function onDisable() {
+	public function onDisable() : void {
 		if(file_exists($this->getServer()->getDataPath() . "tmp")) {
 			$this->getLogger()->info(TextFormat::GOLD . "Cleaning tmp folder...");
 			$this->rmdirAll($this->getServer()->getDataPath() . "tmp");

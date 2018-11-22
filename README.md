@@ -5,5 +5,5 @@ Cleans your tmp folder in PocketMine-MP for Android!
 Just drop this plugin to your plugins folder. It'll automatically clean your tmp folder on server shutdown.
 
 ## Where to use
-- [PocketMine-MP for Android](https://github.com/PocketMine/PocketMine-Android) (Not Recommended)
+- [PocketMine-MP for Android](https://github.com/PocketMine/PocketMine-Android) (Not recommended)
 - [Pocket Server](https://github.com/fengberd/PocketServer) (Recommended)

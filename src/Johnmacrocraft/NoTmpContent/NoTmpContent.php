@@ -42,7 +42,7 @@ class NoTmpContent extends PluginBase {
 
 			$this->getLogger()->info(TextFormat::GREEN . "Done!");
 		} else {
-			$this->getLogger()->info(TextFormat::RED . "NoTmpContent didn't clear tmp folder because it doesn't exist. Seems like you're not using PocketMine-MP for Android or deleted it yourself?");
+			$this->getLogger()->info(TextFormat::RED . "NoTmpContent didn't clear the tmp folder because it doesn't exist. Seems like you're not using PocketMine-MP for Android or deleted it by yourself?");
 		}
 	}
 }

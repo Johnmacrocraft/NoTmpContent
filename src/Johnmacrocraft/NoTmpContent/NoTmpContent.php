@@ -4,7 +4,7 @@
  *
  * NoTmpContent
  *
- * Copyright © 2017-2019 Johnmacrocraft
+ * Copyright (C) 2017-2021 Johnmacro
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@ class NoTmpContent extends PluginBase {
 
 	public function onDisable() : void {
 		if(file_exists($this->getServer()->getDataPath() . "tmp")) {
-			$this->getLogger()->info(TextFormat::GOLD . "Cleaning tmp folder...");
+			$this->getLogger()->info(TextFormat::GOLD . "Cleaning the tmp folder...");
 
 			$rmdirAll = function(string $dir) use(&$rmdirAll) {
 				$dirs = dir($dir);
@@ -42,7 +42,7 @@ class NoTmpContent extends PluginBase {
 
 			$this->getLogger()->info(TextFormat::GREEN . "Done!");
 		} else {
-			$this->getLogger()->info(TextFormat::RED . "NoTmpContent didn't clear the tmp folder because it doesn't exist. Seems like you're not using PocketMine-MP for Android or deleted it by yourself?");
+			$this->getLogger()->info(TextFormat::RED . "NoTmpContent did not clear the tmp folder because it does not exist.");
 		}
 	}
 }

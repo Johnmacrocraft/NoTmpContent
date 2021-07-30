@@ -1,9 +1,8 @@
 # NoTmpContent [![Poggit-CI](https://poggit.pmmp.io/ci.badge/Johnmacrocraft/NoTmpContent/~)](https://poggit.pmmp.io/ci/Johnmacrocraft/NoTmpContent)
-Cleans your tmp folder in PocketMine-MP for Android!
+Automatically clean the tmp folder in PocketMine-MP for Android!
 
 ## How to use
-Just drop this plugin to your plugins folder. It'll automatically clean your tmp folder on server shutdown.
+Just drop this plugin into your plugins folder. It will automatically clean the tmp folder on server shutdown.
 
 ## Where to use
-- [PocketMine-MP for Android](https://github.com/PocketMine/PocketMine-Android) (Not recommended)
-- [Pocket Server](https://github.com/fengberd/PocketServer) (Recommended)
+This plugin should support any app that is capable of running PocketMine-MP on Android, but I cannot guarantee that it will work with all apps.

@@ -13,6 +13,8 @@
  *
  */
 
+declare(strict_types=1);
+
 namespace Johnmacrocraft\NoTmpContent;
 
 use pocketmine\plugin\PluginBase;
